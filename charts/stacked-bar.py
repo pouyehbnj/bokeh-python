@@ -1,7 +1,7 @@
 from bokeh.models import ColumnDataSource
 from bokeh.plotting import figure, output_file, show
 
-output_file("hbar_stack.html")
+output_file("stacked-bar.html")
 
 source = ColumnDataSource(data=dict(
     y=[1, 2, 3, 4, 5],
