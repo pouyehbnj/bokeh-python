@@ -1,4 +1,5 @@
 
+from math import pi
 import pandas as pd
 
 from bokeh.io import output_file, show
@@ -22,7 +23,7 @@ x = {
     'Taiwan': 31,
     'Spain': 29
 }
-pi=3.14
+
 data = pd.Series(x).reset_index(name='value').rename(columns={'index':'country'})
 data['angle'] = data['value']/data['value'].sum() * 2*pi
 data['color'] = Category20c[len(x)]
